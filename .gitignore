@@ -1,0 +1,15 @@
+# Ignorar pastas de cache do Python
+__pycache__/
+
+# Ignorar arquivos .pyc diretamente (muitas vezes já cobertos por __pycache__/)
+*.pyc
+
+# Ignorar o ambiente virtual
+venv/
+
+# Ignorar variáveis de ambiente local
+.env
+
+# Ignorar arquivos gerados por IDEs (ex: VS Code)
+.vscode/
+.idea/
