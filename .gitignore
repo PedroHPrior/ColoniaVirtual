@@ -13,3 +13,4 @@ venv/
 # Ignorar arquivos gerados por IDEs (ex: VS Code)
 .vscode/
 .idea/
+src/__pycache__/main.cpython-312.pyc
