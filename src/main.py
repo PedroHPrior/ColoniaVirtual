@@ -65,8 +65,8 @@ def main():
 
     # --- 6. Avaliar Pedidos ---
     print("\n--- 6. Avaliando Pedidos ---")
-    facade.avaliar_pedido(pedido1.cliente_id, 5, "Produto excelente e entrega rápida!")
-    facade.avaliar_pedido(pedido2.cliente_id, 2, "A cadeira chegou com atraso e um pequeno arranhão.")
+    facade.avaliar_pedido(pedido1.cliente_id, 5, "Produto excelente e entrega rápida!", cliente1.nome) # Ou "Comprador Ana"
+    facade.avaliar_pedido(pedido2.cliente_id, 2, "A cadeira chegou com atraso e um pequeno arranhão.", cliente2.nome) # Ou "Comprador Bruno"
 
     # --- 7. Respostas às Avaliações ---
     print("\n--- 7. Respondendo Avaliações ---")
