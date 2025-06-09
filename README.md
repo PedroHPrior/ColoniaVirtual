@@ -42,7 +42,6 @@ projeto_engenharia/
 │   ├── models/         # Entidades de negócio (Cliente, Produto, Pedido etc.)
 │   ├── strategy/       # Estratégias para cálculo de taxa
 │   ├── facade/         # Interface unificada para o sistema de vendas
-│   ├── services/       # (Opcional) Regras de negócio mais complexas
 │   ├── utils/          # Funções auxiliares
 │   └── main.py         # Exemplo de uso do sistema
 ├── tests/              # Testes unitários (a serem implementados)
