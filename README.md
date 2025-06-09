@@ -34,9 +34,6 @@ CalculaTaxaExpress
 CalculaTaxaPremium
 
 ⚙️ Estrutura do Projeto
-bash
-Copiar
-Editar
 seu_projeto_backend/
 ├── src/
 │   ├── models/         # Entidades de negócio (Cliente, Produto, Pedido etc.)
@@ -56,30 +53,18 @@ Módulos padrão do Python: datetime, abc, typing, entre outros.
 
 🖥️ Como Executar o Projeto Localmente
 1. Clonar o Repositório
-bash
-Copiar
-Editar
 git clone <https://github.com/PedroHPrior/projeto_engenharia.git>
 cd projeto_engenharia
 
 2. Criar e Ativar um Ambiente Virtual
-bash
-Copiar
-Editar
 python -m venv venv
 Ativando o ambiente virtual:
 
 Windows:
 
-bash
-Copiar
-Editar
 .\venv\Scripts\activate
 macOS/Linux:
 
-bash
-Copiar
-Editar
 source venv/bin/activate
 3. Instalar as Dependências
 bash
@@ -91,9 +76,6 @@ O arquivo requirements.txt pode estar vazio neste momento, mas esse passo é imp
 ▶️ Executando o Projeto
 Com o ambiente virtual ativado:
 
-bash
-Copiar
-Editar
 python src/main.py
 Esse comando executa o exemplo de uso contido no main.py, demonstrando o funcionamento dos modelos, estratégias e fachada.
 
@@ -102,9 +84,6 @@ Ainda não implementado
 
 Quando disponíveis, execute os testes com:
 
-bash
-Copiar
-Editar
 # Instale o pytest, se necessário
 pip install pytest
 
@@ -123,15 +102,11 @@ Faça push para a branch: git push origin feature/nova-funcionalidade
 
 Abra um Pull Request
 
-📄 Licença
-Este projeto está licenciado sob a MIT License – veja o arquivo LICENSE para mais informações.
-
-Caso ainda não tenha, você pode gerar o conteúdo da licença neste link e criar o arquivo LICENSE na raiz do projeto.
 
 ✉️ Contato
 Para dúvidas, sugestões ou contribuições, entre em contato:
 
-Nome: [Seu Nome]
+Nome: [Pedro Henrique Prior Kraemer]
 
 Email: [pedrohpk17@gmail.com]
 
