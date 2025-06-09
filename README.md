@@ -1,115 +1,120 @@
-🛠️ Backend – Conexão Colono-Comprador
-Este repositório contém o backend da aplicação Conexão Colono-Comprador, que tem como objetivo conectar colonos (produtores rurais de produtos coloniais) diretamente com compradores interessados. O sistema gerencia dados de usuários, produtos, pedidos, entregas, avaliações, fornecedores e tutoriais, utilizando padrões de projeto como Facade e Strategy para garantir uma arquitetura modular e extensível.
+# 🛠️ Backend – Conexão Colono-Comprador
 
-🚀 Funcionalidades Principais
-Gerenciamento de Usuários
-Cadastro e atualização de perfis de Clientes e Fornecedores (Colonos).
+Este repositório contém o **backend** da aplicação **Conexão Colono-Comprador**, que conecta colonos (produtores rurais de produtos coloniais) diretamente com compradores interessados. O sistema gerencia dados de usuários, produtos, pedidos, entregas, avaliações, fornecedores e tutoriais, utilizando os padrões de projeto **Facade** e **Strategy** para garantir uma arquitetura modular e extensível.
 
-Catálogo de Produtos
-Adição, edição e listagem de produtos coloniais oferecidos pelos fornecedores.
+---
 
-Sistema de Pedidos
-Criação de pedidos, adição de itens, seleção de método de pagamento e cálculo dinâmico de taxas de entrega.
+## 🚀 Funcionalidades Principais
 
-Gestão de Entregas
-Agendamento, atualização de status e rastreamento de entregas.
+- **Gerenciamento de Usuários**  
+  Cadastro e atualização de perfis de **Clientes** e **Fornecedores (Colonos)**.
 
-Sistema de Avaliações e Comentários
-Compradores podem avaliar pedidos, fornecedores e entregas. Respostas também são suportadas.
+- **Catálogo de Produtos**  
+  Adição, edição e listagem de produtos coloniais oferecidos pelos fornecedores.
 
-Base de Conhecimento
-Criação e gerenciamento de tutoriais, como:
-“Como embalar produtos”, “Dicas de vendas”, entre outros.
+- **Sistema de Pedidos**  
+  Criação de pedidos, adição de itens, seleção de método de pagamento e cálculo dinâmico de taxas de entrega.
 
-Padrões de Projeto Utilizados
+- **Gestão de Entregas**  
+  Agendamento, atualização de status e rastreamento de entregas.
 
-Facade – SistemaVendaFacade: Interface simplificada para orquestração de operações de vendas.
+- **Sistema de Avaliações e Comentários**  
+  Compradores podem avaliar pedidos, fornecedores e entregas. Respostas também são suportadas.
 
-Strategy – Estratégias flexíveis para o cálculo de taxas de entrega:
+- **Base de Conhecimento**  
+  Criação e gerenciamento de tutoriais como:  
+  _“Como embalar produtos”_, _“Dicas de vendas”_, entre outros.
 
-CalculaTaxaFixa
+- **Padrões de Projeto Utilizados**
+  - **Facade**: `SistemaVendaFacade` – Interface simplificada para orquestração das operações de vendas.
+  - **Strategy**: Estratégias flexíveis para o cálculo de taxas de entrega:
+    - `CalculaTaxaFixa`
+    - `CalculaTaxaExpress`
+    - `CalculaTaxaPremium`
 
-CalculaTaxaExpress
+---
 
-CalculaTaxaPremium
+## ⚙️ Estrutura do Projeto
 
-⚙️ Estrutura do Projeto
-seu_projeto_backend/
+projeto_engenharia/
 ├── src/
-│   ├── models/         # Entidades de negócio (Cliente, Produto, Pedido etc.)
-│   ├── strategy/       # Estratégias de cálculo de taxa
-│   ├── facade/         # Facade para simplificação das operações
-│   ├── services/       # (Opcional) Lógica de negócio complexa
-│   ├── utils/          # Funções auxiliares
-│   └── main.py         # Ponto de entrada do projeto
-├── tests/              # Testes unitários (a serem implementados)
-├── .env                # Variáveis de ambiente
-├── requirements.txt    # Dependências do projeto
-└── README.md           # Documentação do projeto
-🧪 Tecnologias Utilizadas
-Python 3.x
+│ ├── models/ # Entidades de negócio (Cliente, Produto, Pedido etc.)
+│ ├── strategy/ # Estratégias para cálculo de taxa
+│ ├── facade/ # Interface unificada para o sistema de vendas
+│ ├── services/ # (Opcional) Regras de negócio mais complexas
+│ ├── utils/ # Funções auxiliares
+│ └── main.py # Exemplo de uso do sistema
+├── tests/ # Testes unitários (a serem implementados)
+├── .env # Variáveis de ambiente
+├── requirements.txt # Dependências do projeto
+└── README.md # Documentação do projeto
 
-Módulos padrão do Python: datetime, abc, typing, entre outros.
 
-🖥️ Como Executar o Projeto Localmente
-1. Clonar o Repositório
-git clone <https://github.com/PedroHPrior/projeto_engenharia.git>
+---
+
+## 🧪 Tecnologias Utilizadas
+
+- **Python 3.x**
+- **Módulos padrão do Python**: `datetime`, `abc`, `typing`, entre outros
+
+---
+
+## 🖥️ Como Executar o Projeto Localmente
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/PedroHPrior/projeto_engenharia.git
 cd projeto_engenharia
+```
 
-2. Criar e Ativar um Ambiente Virtual
+### 2. Criar e Ativar um Ambiente Virtual
+```bash
 python -m venv venv
+```
 Ativando o ambiente virtual:
 
-Windows:
-
+#### Windows:
+```bash
 .\venv\Scripts\activate
-macOS/Linux:
-
+```
+#### macOS/Linux:
+```bash
 source venv/bin/activate
-3. Instalar as Dependências
-bash
-Copiar
-Editar
+```
+
+### 3. Instalar as Dependências
+```bash
 pip install -r requirements.txt
-O arquivo requirements.txt pode estar vazio neste momento, mas esse passo é importante para futuras bibliotecas.
+```
+Mesmo que o requirements.txt esteja vazio, este passo é importante para futuras dependências.
 
-▶️ Executando o Projeto
-Com o ambiente virtual ativado:
+## ▶️ Executando o Projeto
 
-python src/main.py
-Esse comando executa o exemplo de uso contido no main.py, demonstrando o funcionamento dos modelos, estratégias e fachada.
+Com o ambiente virtual ativado, execute:
+```bash
+python -m src.main
+```
+Esse comando executa o exemplo de uso contido em main.py, demonstrando o funcionamento dos modelos, estratégias e fachada.
 
-✅ Testes
+## ✅ Testes
+
 Ainda não implementado
-
 Quando disponíveis, execute os testes com:
-
+```bash
 # Instale o pytest, se necessário
 pip install pytest
 
-# Rode os testes
+# Execute os testes
 pytest tests/
-🤝 Contribuindo
-Contribuições são muito bem-vindas!
+```
+## ✉️ Contato
 
-Faça um fork deste repositório
+Autor: Pedro Henrique Prior Kraemer
 
-Crie uma branch: git checkout -b feature/nova-funcionalidade
+GitHub: https://github.com/PedroHPrior
 
-Faça suas alterações e commite: git commit -m "feat: adiciona nova funcionalidade X"
-
-Faça push para a branch: git push origin feature/nova-funcionalidade
-
-Abra um Pull Request
+LinkedIn: https://www.linkedin.com/in/pedro-henrique-prior-kraemer/ 
 
 
-✉️ Contato
-Para dúvidas, sugestões ou contribuições, entre em contato:
 
-Nome: [Pedro Henrique Prior Kraemer]
-
-Email: [pedrohpk17@gmail.com]
-
-GitHub: [https://github.com/PedroHPrior]
-
-LinkedIn: [https://www.linkedin.com/in/pedro-henrique-prior-kraemer/]
