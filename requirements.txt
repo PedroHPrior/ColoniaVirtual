@@ -1,0 +1,3 @@
+# Este arquivo lista as dependências do projeto Python.
+# Atualmente, o projeto utiliza apenas módulos padrão do Python.
+# Nenhuma biblioteca externa é estritamente necessária neste estágio.
