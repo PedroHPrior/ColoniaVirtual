@@ -56,7 +56,7 @@ projeto_engenharia/
 
 ## 🧪 Tecnologias Utilizadas
 
-- **Python 3.x**
+- **Python 3.x https://www.python.org/downloads/** 
 - **Módulos padrão do Python**: `datetime`, `abc`, `typing`, entre outros
 
 ---
@@ -69,23 +69,7 @@ projeto_engenharia/
 git clone https://github.com/PedroHPrior/projeto_engenharia.git
 cd projeto_engenharia
 ```
-
-### 2. Criar e Ativar um Ambiente Virtual
-```bash
-python -m venv venv
-```
-Ativando o ambiente virtual:
-
-#### Windows:
-```bash
-.\venv\Scripts\activate
-```
-#### macOS/Linux:
-```bash
-source venv/bin/activate
-```
-
-### 3. Instalar as Dependências
+### 2. Instalar as Dependências
 ```bash
 pip install -r requirements.txt
 ```
@@ -93,7 +77,6 @@ Mesmo que o requirements.txt esteja vazio, este passo é importante para futuras
 
 ## ▶️ Executando o Projeto
 
-Com o ambiente virtual ativado, execute:
 ```bash
 python -m src.main
 ```
