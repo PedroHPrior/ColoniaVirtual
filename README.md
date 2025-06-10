@@ -77,6 +77,8 @@ Mesmo que o requirements.txt esteja vazio, este passo é importante para futuras
 
 ## ▶️ Executando o Projeto
 
+Lembrando que existem duas branches, na branch main estão mockados os valores, e ao rodar o comando abaixo é possível ver onde estão implementados os padrões facade e strategy. Já na branch homolog é possível encontrar a interface interativa do sistema.
+
 ```bash
 python -m src.main
 ```
